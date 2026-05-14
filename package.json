@@ -1,0 +1,15 @@
+{
+    "name": "different-react-versions-typescript",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "start": "pnpm --parallel start",
+        "build": "pnpm --parallel build",
+        "serve": "npx http-server dist -p 3000 --cors",
+        "clean": "pnpm --parallel clean"
+    },
+    "devDependencies": {
+        "@playwright/test": "1.57.0",
+        "wait-on": "7.2.0"
+    }
+}
