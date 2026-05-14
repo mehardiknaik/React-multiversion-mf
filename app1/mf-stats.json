@@ -1,0 +1,91 @@
+{
+  "id": "app1",
+  "name": "app1",
+  "metaData": {
+    "name": "app1",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "2.0.0",
+      "buildName": "app1"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "app1",
+    "pluginVersion": "0.23.0",
+    "prefetchInterface": false,
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "id": "app1:react-16",
+      "requiredVersion": "^16.14.0",
+      "name": "react-16",
+      "version": "16.14.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "chunk/325.99cc89f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "id": "app1:react-dom-16",
+      "requiredVersion": "^16.14.0",
+      "name": "react-dom-16",
+      "version": "16.14.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "chunk/427.536e427.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "./Content",
+      "id": "app1:Content",
+      "name": "Content",
+      "requires": [],
+      "file": "src/App",
+      "assets": {
+        "js": {
+          "sync": [
+            "chunk/__federation_expose_Content.9068437.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "css/__federation_expose_Content.7253fd8.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}

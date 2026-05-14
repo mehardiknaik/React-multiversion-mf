@@ -1,0 +1,87 @@
+{
+  "id": "app1",
+  "name": "app1",
+  "metaData": {
+    "name": "app1",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "2.0.0",
+      "buildName": "app1"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "app1",
+    "pluginVersion": "0.23.0",
+    "prefetchInterface": false,
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "id": "app1:react-16",
+      "name": "react-16",
+      "version": "16.14.0",
+      "requiredVersion": "^16.14.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "chunk/325.99cc89f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "app1:react-dom-16",
+      "name": "react-dom-16",
+      "version": "16.14.0",
+      "requiredVersion": "^16.14.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "chunk/427.536e427.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "app1:Content",
+      "name": "Content",
+      "assets": {
+        "js": {
+          "sync": [
+            "chunk/__federation_expose_Content.9068437.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "css/__federation_expose_Content.7253fd8.css"
+          ],
+          "async": []
+        }
+      },
+      "path": "./Content"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "app3",
+  "name": "app3",
+  "metaData": {
+    "name": "app3",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "2.0.0",
+      "buildName": "app3"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "app3",
+    "pluginVersion": "0.23.0",
+    "prefetchInterface": false,
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "id": "app3:react-18",
+      "requiredVersion": "^18.3.1",
+      "name": "react-18",
+      "version": "18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "chunk/580.9c019f1.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "id": "app3:react-dom-18",
+      "requiredVersion": "^18.3.1",
+      "name": "react-dom-18",
+      "version": "18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "chunk/673.0505110.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "./Content",
+      "id": "app3:Content",
+      "name": "Content",
+      "requires": [],
+      "file": "src/App",
+      "assets": {
+        "js": {
+          "sync": [
+            "chunk/__federation_expose_Content.3d6ec9d.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "css/__federation_expose_Content.cdf7a0b.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}
