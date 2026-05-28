@@ -1,8 +1,7 @@
-import { ModuleFederationPlugin } from '@module-federation/enhanced';
+import { ModuleFederationPlugin } from '@module-federation/enhanced/webpack';
 
 export const getMFConfig = (isProd: boolean) => {
     const __node_env = isProd ? 'production' : 'development';
-    console.log('MF Config for:', __node_env);
 
     // In production, use the GH_PAGES_BASE_URL env var (set by the CI workflow)
     // so manifest paths resolve correctly under the repo subpath on GitHub Pages.
@@ -27,6 +26,9 @@ export const getMFConfig = (isProd: boolean) => {
             app4: isProd
                 ? `app4@${base}/app4/mf-manifest.json`
                 : "app4@http://localhost:3004/mf-manifest.json",
+            app5: isProd
+                ? `app5@${base}/app5/mf-manifest.json`
+                : "app5@http://localhost:3005/mf-manifest.json",
         },
         exposes: {},
         runtimePlugins: [],

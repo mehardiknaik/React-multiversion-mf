@@ -28,6 +28,7 @@ const App = () => {
           <RemoteLoader importer={() => import('app2/Content')} number={number} />
           <RemoteLoader importer={() => import('app3/Content')} number={number} />
           <RemoteLoader importer={() => import('app4/Content')} number={number} />
+          <RemoteLoader importer={() => import('app5/Content')} number={number} />
         </div>
       </div>}
     </div>

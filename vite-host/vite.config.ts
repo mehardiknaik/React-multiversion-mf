@@ -6,7 +6,7 @@ import { federation } from '@module-federation/vite';
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
   const path = process.env.GH_PAGES_BASE_URL ?? ""
-  const base = isProd ? `${path}/vite-host/` : "/";
+  const base = isProd ? `${path}/vite-host/` : "";
   return {
     base,
     plugins: [react(),
@@ -29,6 +29,10 @@ export default defineConfig(({ mode }) => {
         app4: {
           name: "app4",
           entry: isProd ? `${path}/app4/mf-manifest.json` : "http://localhost:3004/mf-manifest.json",
+        },
+        app5: {
+          name: "app5",
+          entry: isProd ? `${path}/app5/mf-manifest.json` : "http://localhost:3005/mf-manifest.json",
         },
       },
       shareStrategy: "loaded-first",
