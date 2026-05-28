@@ -5,8 +5,9 @@ import { federation } from '@module-federation/vite';
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
+  const base = isProd ? `${process.env.GH_PAGES_BASE_URL}/vite-host/` : "/";
   return {
-    base: '/vite-host/',
+    base,
     plugins: [react(),
     federation({
       name: 'vite_host',
